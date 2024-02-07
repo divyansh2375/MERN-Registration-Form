@@ -5,10 +5,10 @@ const FormDataModel = require ('./models/FormData');
 
 
 const app = express();
-app.use(express.json());
+app.use(express.json());  // 9012086273
 app.use(cors());
 
-mongoose.connect('mongodb://127.0.0.1:27017/practice_mern');
+mongoose.connect('mongodb://127.0.0.1:27017/blogapp');
 
 app.post('/register', (req, res)=>{
     // To post / insert data into database
